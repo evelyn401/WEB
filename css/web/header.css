@@ -14,10 +14,10 @@ header > section{
     display: flex;
     height: 60px;
 }
-header > section > nav > ul {
+section > nav > ul {
     display: flex;
 }
-header > section > nav > ul > li {
+nav > ul > li {
     /* 左右間距20px */
     margin: 0 20px;
 }
