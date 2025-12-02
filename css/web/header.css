@@ -3,3 +3,11 @@ header{
     /* 利用色塊來做定位 */
     background-color: #EAD8C0;
 }
+
+/* 指定（後代）選取器 最多指定三階 */
+header > section{
+    width: 80%;
+    /* 置中 上下0 左右自動 */
+    margin: 0 auto;
+    background-color: #F6F3EF;
+}
