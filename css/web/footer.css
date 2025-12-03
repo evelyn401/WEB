@@ -4,8 +4,9 @@ footer{
     background-color: #5e4b3c;
 }
 
-#FooterContent > h5 > p {
+#FooterContent > h5 {
     color: #F6F3EF;
+    /* 文字置中 */
     text-align: center;
     line-height: 1.5;
 }
