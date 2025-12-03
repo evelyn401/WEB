@@ -1,0 +1,11 @@
+footer{
+    /* 留白取代高度 */
+    padding: 20px 0;
+    background-color: #5e4b3c;
+}
+
+#FooterContent > h5 > p {
+    color: #F6F3EF;
+    text-align: center;
+    line-height: 1.5;
+}
