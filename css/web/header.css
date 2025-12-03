@@ -15,11 +15,13 @@ header > section{
     height: 60px;
     /* 水平均分（貼齊頭尾） */
     justify-content: space-between;
+    /* 垂直置中 */
+    align-items: center;
 }
 
 header > section > nav{
     width: 60%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 /* id選擇器 需要被javascript控制 或是 同一框架內有相同標籤 */
 section > nav > ul {
