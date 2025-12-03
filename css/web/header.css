@@ -17,15 +17,23 @@ header > section{
     justify-content: space-between;
     /* 垂直置中 */
     align-items: center;
+    color: #5E4B3C;
 }
 
 header > section > nav{
     width: 60%;
     /* background-color: aquamarine; */
 }
-/* id選擇器 需要被javascript控制 或是 同一框架內有相同標籤 */
+
 section > nav > ul {
     display: flex;
     /* 水平均分 （前後有距離） */
     justify-content: space-around;
+}
+
+/* id選擇器 需要被javascript控制 或是 同一框架內有相同標籤 */
+#MenuContent > li > a{
+    text-decoration: none;
+    color: #5E4B3C;
+    font-weight: bold;
 }
