@@ -13,9 +13,17 @@ header > section{
     /* 顯示：彈性佈局 */
     display: flex;
     height: 60px;
-    /* 水平均分 */
+    /* 水平均分（貼齊頭尾） */
     justify-content: space-between;
 }
+
+header > section > nav{
+    width: 60%;
+    background-color: aquamarine;
+}
+/* id選擇器 需要被javascript控制 或是 同一框架內有相同標籤 */
 section > nav > ul {
     display: flex;
+    /* 水平均分 （前後有距離） */
+    justify-content: space-around;
 }
