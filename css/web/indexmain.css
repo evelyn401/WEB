@@ -43,7 +43,7 @@
     margin: 0 auto;
     /* 彈性佈局 */
     display: flex;
-    /* 水平置中 */
+    /* 水平均分置中 */
     justify-content: center;
     /* 間距 */
     gap: 60px;
