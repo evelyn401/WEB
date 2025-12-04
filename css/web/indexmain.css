@@ -24,3 +24,11 @@
     margin: 15px auto 0 auto;
     border-radius: 2px;
 }
+
+.lineW {
+    width: 80px;
+    height: 3px;
+    background-color: #F6F3EF;
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
