@@ -1,7 +1,10 @@
 /* 讀取類別 class (.) */
+
+.BackColor {
+    background-color: #F6F3EF;
+}
 #Abouts .Title, #Skills .Title, #Works .Title, #Contacts .Title {
     text-align: center;
     /* 留白取代高度 */
     padding: 80px 0 40px 0;
-    background-color: aqua;
 }
