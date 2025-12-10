@@ -63,6 +63,14 @@
     padding: 5px 10px;
     text-align: center;
 }
+#Works {
+    background-image: url(/images/background/work01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 背景滾動 */
+    background-attachment: fixed;
+}
 
 #Works .Title h2 {
     color: #F6F3EF;
@@ -74,4 +82,37 @@
     background-color: #F6F3EF;
     margin: 15px auto 0 auto;
     border-radius: 2px;
+}
+
+.WorksItems {
+    /* background-color: aqua; */
+    width: 50%;
+    /* 置中 */
+    margin: 0 auto;
+    /* 彈性佈局 */
+    display: flex;
+    /* 水平均分置中 */
+    justify-content: center;
+    /* 間距 */
+    gap: 20px;
+    /* 換行 */
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.WorksItems li {
+    width: 300px;
+    height: 200px;
+    background-color: #d0bfae;
+    /* 彈性佈局 */
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+}
+.WorksItems li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5E4B3C;
+    text-decoration: none;
 }
