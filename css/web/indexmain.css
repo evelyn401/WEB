@@ -123,7 +123,7 @@
     /* 垂直置中 */
     align-items: center;
 }
-a:hover{
+.WorksItems a:hover{
     background-color: #5E4B3C;
     border-radius: 8px;
 }
