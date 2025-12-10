@@ -130,3 +130,19 @@ a:hover span{
     /* 文字顏色 */
     color: #F6F3EF;
 }
+
+/* 表單 */
+#Contacts {
+    padding-bottom: 80px;
+}
+#Contacts #contact{
+    /* 寬度 */
+    width: 600px;
+    /* background-color: aqua; */
+    /* 置中 */
+    margin: 0 auto;
+    /* 內縮留白 */
+    padding: 20px;
+    /* 框線 */
+    border: 6px double #5E4B3C;
+}
