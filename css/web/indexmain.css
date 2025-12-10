@@ -103,6 +103,19 @@
     width: 300px;
     height: 200px;
     background-color: #d0bfae;
+    border-radius: 8px;
+}
+.WorksItems li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5E4B3C;
+    text-decoration: none;
+    /* 文字透明 */
+    color:transparent;
+    /* 感應高度 */
+    height: 200px;
+    /* 感應寬度 */
+    width: 300px;
     /* 彈性佈局 */
     display: flex;
     /* 水平置中 */
@@ -110,9 +123,11 @@
     /* 垂直置中 */
     align-items: center;
 }
-.WorksItems li a {
-    font-size: 20px;
-    font-weight: bold;
-    color: #5E4B3C;
-    text-decoration: none;
+a:hover{
+    background-color: #5E4B3C;
+    border-radius: 8px;
+}
+a:hover span{
+    /* 文字顏色 */
+    color: #F6F3EF;
 }
