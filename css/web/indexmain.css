@@ -50,7 +50,7 @@
     padding-bottom: 80px;
 }
 .Cards {
-    background-color: #d0bfae;
+    background-color: #F6F3EF;
     /* 利用函式計算寬度 不同單位不能計算 ((外層總寬度 / 卡片數量 - 間距值) *1倍單位值 )*/
     width: calc((100 / 3 - 6)*1%);
     font-size: 18px;
