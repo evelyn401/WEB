@@ -125,7 +125,7 @@
 .WorksItems a:hover{
     background-color: #5E4B3C;
     /* 背景顏色透明 */
-    opacity: 0.5;
+    opacity: 0.8;
     border-radius: 8px;
 }
 a:hover span{
