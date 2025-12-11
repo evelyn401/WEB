@@ -211,3 +211,19 @@ a:hover span{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+#contact div input[type="tel"]{
+    width: 585px;
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#contact div input[type="email"]{
+    width: 585px;
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
