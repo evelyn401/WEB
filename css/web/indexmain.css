@@ -203,23 +203,7 @@ a:hover span{
     color: #5E4B3C;
     padding: 5px 0;
 }
-#contact div input[type="text"]{
-    width: 585px;
-    height: 20px;
-    font-size: 16px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-#contact div input[type="tel"]{
-    width: 585px;
-    height: 20px;
-    font-size: 16px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-#contact div input[type="email"]{
+#contact div input[type="text"],#contact div input[type="tel"],#contact div input[type="email"]{
     width: 585px;
     height: 20px;
     font-size: 16px;
