@@ -241,3 +241,15 @@ a:hover span{
     justify-content: space-between;
     /* background-color: aqua; */
 }
+#contact > p input[type="submit"], #contact > p input[type="reset"]{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F6F3EF;
+    background-color: #5E4B3C;
+    border: none;
+    border-radius: 4px;
+     /* 滑鼠移到按鈕上時顯示手指游標 */
+    cursor: pointer;
+}
