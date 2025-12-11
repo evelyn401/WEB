@@ -193,3 +193,13 @@ a:hover span{
     /* 框線 */
     border: 6px double #5E4B3C;
 }
+#Contacts #contact div{
+    /* 底部留白 */
+    margin-bottom: 15px;
+}
+#contact p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #5E4B3C;
+    padding: 5px 0;
+}
