@@ -195,11 +195,19 @@ a:hover span{
 }
 #Contacts #contact div{
     /* 底部留白 */
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #contact p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #5E4B3C;
     padding: 5px 0;
+}
+#contact div input[type="text"]{
+    width: 585px;
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
