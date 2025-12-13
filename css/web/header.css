@@ -6,19 +6,21 @@ header{
 
 /* 指定（後代）選取器 （最多指定三階）*/
 header > section{
-    width: 90%;
+    width: 100%;
     /* 置中 上下0 左右自動 */
     margin: 0 auto;
-    /* background-color: #F6F3EF; */
+    background-color: #F6F3EF; 
     /* 顯示：彈性佈局 */
     display: flex;
-    height: 60px;
+    height: 80px;
     /* 水平均分（貼齊頭尾） */
     justify-content: space-between;
     /* 垂直置中 */
     align-items: center;
     color: #5E4B3C;
     padding-top: 20px;
+    /* 停留在最上方 定位點：停佇 */
+    position: fixed;
 }
 
 header > section > h1{
@@ -47,4 +49,5 @@ section > nav > ul {
 #Logo > img{
     width: 150px;
     height: auto;
+    padding-left: 60px;
 }
