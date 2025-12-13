@@ -21,6 +21,7 @@ header > section{
     padding-top: 20px;
     /* 停留在最上方 定位點：停佇 */
     position: fixed;
+    top: 0;
 }
 
 header > section > h1{
@@ -31,6 +32,7 @@ header > section > h1{
 header > section > nav{
     width: 45%;
     /* background-color: aquamarine; */
+    margin-right: 5%;
 }
 
 section > nav > ul {
@@ -49,5 +51,5 @@ section > nav > ul {
 #Logo > img{
     width: 150px;
     height: auto;
-    padding-left: 60px;
+    margin-left: 60%;
 }
