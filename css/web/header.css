@@ -33,6 +33,7 @@ header > section > nav{
     width: 35%;
     /* background-color: aquamarine; */
     margin-right: 5%;
+    margin-bottom: 20px;
 }
 
 section > nav > ul {
@@ -52,4 +53,5 @@ section > nav > ul {
     width: 150px;
     height: auto;
     margin-left: 60%;
+    margin-bottom: 20px;
 }
