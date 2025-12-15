@@ -1,5 +1,5 @@
-// 取得 html 元素(id)
-// 新增變數 year 縮短程式碼
-let Year = document.getElementById("Year");
-let Years = new Date().getFullYear();
-Year.textContent = Years;
+// 匯入函式
+import { Years } from "../javascript/module/year.js";
+
+// 執行函式
+Years();
