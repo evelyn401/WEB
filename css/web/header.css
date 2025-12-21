@@ -75,3 +75,13 @@ section > nav > ul {
 #Carousel > .Active{
     display: block;
 }
+
+/* 控制按鈕 */
+.Controls{
+    /* 定位點：絕對定位 在圖片上方 */
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
