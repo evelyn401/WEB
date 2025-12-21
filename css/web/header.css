@@ -65,3 +65,13 @@ section > nav > ul {
     width: 100%;
     /* height: 500px; */
 }
+
+/* 隱藏圖片 */
+#Carousel > .CarouselImg{
+    display: none;
+}
+
+/* 設定第一張圖片可以看見 */
+#Carousel > .Active{
+    display: block;
+}
