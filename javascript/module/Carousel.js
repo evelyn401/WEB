@@ -30,4 +30,7 @@ export function BannerCarousel() {
     // 按鈕功能
     document.getElementById( "NextBtn" ).addEventListener( "click", showNextImage );
     document.getElementById( "PrevBtn" ).addEventListener( "click", showPrevImage );
+
+    // 自動輪播 每兩秒顯示下一張圖片
+    setInterval( showNextImage, 2000 );
 }
