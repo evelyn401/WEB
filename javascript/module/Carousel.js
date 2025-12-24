@@ -17,7 +17,7 @@ export function BannerCarousel() {
     const Images = document.querySelectorAll( "#Carousel > .CarouselImg" );
     // 宣告常數 讀取圖片的長度（張數）
     const totalImages = Images.length;
-    
+
     // 20251224新增資料
     // 存放自動播放的計時器
     let autoPlayInterval;
@@ -44,10 +44,14 @@ export function BannerCarousel() {
         Images[currentIndex].classList.add( "Active" );
     }
 
+    // 啟動自動輪播 每兩秒顯示下一張圖片
+    function startAutoPlay() {
+        autoPlayInterval = setInterval( showNextImage, 2000 );
+    }
+
     // 按鈕功能
     document.getElementById( "NextBtn" ).addEventListener( "click", showNextImage );
     document.getElementById( "PrevBtn" ).addEventListener( "click", showPrevImage );
 
-    // 自動輪播 每兩秒顯示下一張圖片
-    setInterval( showNextImage, 2000 );
+
 }
