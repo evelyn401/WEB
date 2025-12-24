@@ -73,6 +73,17 @@ section > nav > ul {
     display: none;
 }
 
+#Carousel > .CarouselImg > p{
+    width: 500px;
+    background-color: aqua;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #5E4B3C;
+    position: absolute;
+    z-index: 5;
+}
+
 /* 設定第一張圖片可以看見 */
 #Carousel > .Active{
     display: block;
