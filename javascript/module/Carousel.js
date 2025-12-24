@@ -49,6 +49,14 @@ export function BannerCarousel() {
         autoPlayInterval = setInterval( showNextImage, 2000 );
     }
 
+    // 停止自動輪播
+    function stopAutoPlay() {
+        // 清除自動播放的計時器
+        clearInterval( autoPlayInterval );
+        // 防止重複設置重啟計時器
+        clearTimeout( restartTimeout );
+    }
+
     // 按鈕功能
     document.getElementById( "NextBtn" ).addEventListener( "click", showNextImage );
     document.getElementById( "PrevBtn" ).addEventListener( "click", showPrevImage );
