@@ -13,4 +13,22 @@ export function NavBar(){
     Ul.setAttribute("id", "MenuContent");
     // 將 ul加入到 NavId這個父元素之中
     NavId.appendChild(Ul);
+
+    // 利用迴圈跑陣列，將陣列資料一筆一筆加入到 ul清單之中，（初始值變數 ; 條件 ; 每次執行後的動作）
+    // 若讀取是陣列資料，迴圈條件要設定資料長度（筆數）
+
+    for(let i = 0; i < MenuItems.length; i++){
+        // 宣告變數，建立 li標籤
+        let Li = document.createElement("li");
+        // 在 li標籤內建立 a標籤
+        let Alink = document.createElement("a");
+        // 將 li加入到 ul 這個父元素之中
+        Ul.appendChild(Li);
+        // 將 a標籤加入到 li這個父元素之中
+        Li.appendChild(Alink);
+        // 在 a標籤內加入 連結文字
+        Alink.textContent = MenuItems[i];
+        // 在 a標籤內加入 href屬性，設定連結位置
+        Alink.setAttribute("href", MenuLinks[i]);
+    }
 }
