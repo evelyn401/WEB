@@ -4,7 +4,13 @@ import { BannerCarousel } from './module/Carousel.js'
 createApp({
     data() {
         return {
-            message: '<span style="color: red">This should be red.</span>'
+            message: '<span style="color: red">This should be red.</span>',
+            test:{
+                id: "colorTest",
+                class: "info",
+                style: { color: "blue" }
+            },
+            text: "我是字串"
         }
     }
 }).mount('#app');

@@ -9,6 +9,7 @@
     <div id="app">
         {{ message }}
         <div v-html="message"></div>
+        <p v-bind="test">{{ text }}</p>
     </div>
     <!-- 放在 body 結束前，確保 DOM 完全載入 -->
     <script type="module" src="vue/vue.js"></script>
