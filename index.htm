@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <article>
+    <article id="app">
         <header>
         <section id="NavContent">
             <h1 id="Logo">
@@ -39,7 +39,8 @@
                 <button id="PrevBtn">&lt;</button>
                 <button id="NextBtn">&gt;</button>
             </div>
-         </ul>
+        </ul>
+        <div> {{ message }} </div>
     </header>
 
         <main id="IndexMain">
@@ -190,6 +191,8 @@
     </footer>
     </article>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="vue/vue.js"></script>
     <script type="module" src="javascript/javascript.js"></script>
 </body>
 </html>
