@@ -206,6 +206,14 @@ a:hover span{
     /* 滑鼠移到按鈕上時顯示手指游標 */
     cursor: pointer;
 }
+#BigImage p{
+    /* 置中 */
+    text-align: center;
+    padding-top: 280px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5E4B3C;
+}
 
 /* 表單 */
 #Contacts {
