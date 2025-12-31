@@ -182,11 +182,29 @@ a:hover span{
     background-repeat: no-repeat;
 }
 .WorksItems #BigImage{
-    width: 500px;
-    height: 400px;
+    width: 1000px;
+    height: 640px;
     background-color: #d0bfae;
+    /* 定位點 絕對定位 */
+    position: absolute;
     /* 層疊 */
     z-index: 10;
+    border-radius: 8px;
+}
+#BigImage .CloseBtn{
+    /* 定位點 絕對定位 */
+    position: absolute;
+    /* 右上角 */
+    top: 20px;
+    right: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #5E4B3C;
+    background-color: #F6F3EF;
+    padding: 10px 10px;
+    border-radius: 4px;
+    /* 滑鼠移到按鈕上時顯示手指游標 */
+    cursor: pointer;
 }
 
 /* 表單 */
