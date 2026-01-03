@@ -26,7 +26,14 @@ const app = createApp({
 const app2 = createApp({
     data() {
         return {
-            BIGIMAGE: true
+            BIGIMAGE: true,
+            // 定義導覽列選單資料陣列，包含id text link屬性
+            NavItems:[
+                {id:"NavAbout" , text:"About", link:"#Abouts"},
+                {id:"NavSkills" , text:"Skills", link:"#Skills"},
+                {id:"NavWorks" , text:"Works", link:"#Works"},
+                {id:"NavContact" , text:"Contact", link:"#Contacts"}
+            ]
         }
     },
     methods: {
