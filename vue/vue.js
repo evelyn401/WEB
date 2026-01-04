@@ -56,7 +56,7 @@ const app2 = createApp({
             this.currentIndex = (this.currentIndex + 1) % this.CarouselItems.length;
             this.updateActiveClass();
         },
-        // 新增：切換到上一張輪播圖
+        // 新增：切換到上一張輪播圖，確保不會變成負數
         prevSlide() {
             this.currentIndex = (this.currentIndex - 1 + this.CarouselItems.length) % this.CarouselItems.length;
             this.updateActiveClass();
