@@ -27,21 +27,21 @@
         </section>
 
         <ul id="Carousel">
-            <li id="One" class="CarouselImg Active">
-                <img src="images/CarouselXXL/1.png" alt="廣告圖片1" title="Graphic Design">
-                <p>Graphic Design</p>
+            <li  v-for="item in CarouselItems" :key="item.id" :id="item.id" :class="item.class">
+            <img :src="item.img" :alt="item.text">
+                <p>{{ item.text }}</p>
             </li>
-            <li id="Two" class="CarouselImg">
+            <!-- <li id="Two" class="CarouselImg">
                 <img src="images/CarouselXXL/2.png" alt="廣告圖片2" title="Storybook Design">
                 <p>Storybook Design</p>
             </li>
             <li id="Three" class="CarouselImg">
                 <img src="images/CarouselXXL/3.png" alt="廣告圖片3" title="Packaging Design">
                 <p>Packaging Design</p>
-            </li>
+            </li> -->
             <div class="Controls">
-                <button id="PrevBtn">&lt;</button>
-                <button id="NextBtn">&gt;</button>
+                <button @click="prevSlide" >&lt;</button>
+                <button @click="nextSlide" >&gt;</button>
             </div>
         </ul>
     </header>
