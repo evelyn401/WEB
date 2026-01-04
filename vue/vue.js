@@ -33,6 +33,12 @@ const app2 = createApp({
                 {id:"NavSkills" , text:"Skills", link:"#Skills"},
                 {id:"NavWorks" , text:"Works", link:"#Works"},
                 {id:"NavContact" , text:"Contact", link:"#Contacts"}
+            ],
+            // 輪播圖資料陣列，包含id class img text屬性
+            CarouselItems:[
+                {id:"One", class:"CarouselItem Active", img:"images/CarouselXXL/1.png", text:"Graphic Design"},
+                {id:"Two", class:"CarouselItem", img:"images/CarouselXXL/2.png", text:"Storybook Design"},
+                {id:"Three", class:"CarouselItem", img:"images/CarouselXXL/3.png", text:"Packaging Design"}
             ]
         }
     },
