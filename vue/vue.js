@@ -73,9 +73,8 @@ const app2 = createApp({
         },
         // 新增：停止自動輪播
         stopAutoPlay() {
-            if (this.autoPlayInterval) {
-                clearInterval(this.autoPlayInterval);
-            }
+        clearInterval(this.autoPlayInterval);
+        this.autoPlayInterval = null;
         }
     },
     // 新增：元件掛載後啟動自動輪播
