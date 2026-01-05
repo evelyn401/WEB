@@ -43,10 +43,14 @@ document.getElementById("myButton").addEventListener("click", function(){
 6.使用 call、apply、bind 方法改變 this 指向
     
     call(): 立即呼叫函式，參數逐一傳遞，並指定 this 指向
+    apply(): 立即呼叫函式，參數以陣列形式傳遞，並指定 this 指向
+    bind(): 不會立即呼叫函式，而是回傳一個新的函式，並指定 this 指向
 */
 function Greet(greeting, punctuation){
     console.log(`${greeting}, my name is ${this.name}${punctuation}`);
 };
 const user = { name: 'Bob' };
 Greet.call(user, 'Hello', '!'); // Hello, my name is Bob!
+
+
 
