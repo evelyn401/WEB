@@ -46,11 +46,30 @@ document.getElementById("myButton").addEventListener("click", function(){
     apply(): 立即呼叫函式，參數以陣列形式傳遞，並指定 this 指向
     bind(): 不會立即呼叫函式，而是回傳一個新的函式，並指定 this 指向
 */
-function Greet(greeting, punctuation){
+function GreetCall(greeting, punctuation){
     console.log(`${greeting}, my name is ${this.name}${punctuation}`);
 };
 const user = { name: 'Bob' };
-Greet.call(user, 'Hello', '!'); // Hello, my name is Bob!
+GreetCall.call(user, 'Hello', '!'); // Hello, my name is Bob!
+
+function GreetApply(greeting, punctuation){
+    console.log(`${greeting}, my name is ${this.name}${punctuation}`);
+};
+GreetApply.apply(user, ['Hi', '...']); // Hi, my name is Bob...
+
+function GreetBind(){
+    function Greet(greeting, punctuation){
+        console.log(`${greeting}, my name is ${this.name}${punctuation}`);
+    };
+    const user = { name: 'Eve' };
+    // 透過 bind 方法建立一個新的函式，並指定 this 指向 user 物件
+    const boundGreet = Greet.bind(user, 'Hey');
+    // 呼叫新的函式，並傳遞剩餘的參數
+    boundGreet('!!!'); // Hey, my name is Eve!!!
+};
+// 輸出：Hey, my name is Eve!!!
+GreetBind(); // ✅ 加上這行，呼叫函式
+
 
 
 
