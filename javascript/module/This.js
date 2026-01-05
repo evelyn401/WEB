@@ -42,9 +42,9 @@ document.getElementById("myButton").addEventListener("click", function(){
 /*
 6.使用 call、apply、bind 方法改變 this 指向
     
-    call(): 立即呼叫函式，參數逐一傳遞，並指定 this 指向
-    apply(): 立即呼叫函式，參數以陣列形式傳遞，並指定 this 指向
-    bind(): 不會立即呼叫函式，而是回傳一個新的函式，並指定 this 指向
+    call(): 立即呼叫函式，參數逐一傳遞，並指定 this 指向（簡單參數）
+    apply(): 立即呼叫函式，參數以陣列形式傳遞，並指定 this 指向（多參數用陣列 ex:名字電話地址）
+    bind(): 不會立即呼叫函式，而是回傳一個新的函式，並指定 this 指向（事件處理先給資料，可延遲呼叫）
 */
 function GreetCall(greeting, punctuation){
     console.log(`${greeting}, my name is ${this.name}${punctuation}`);
@@ -62,7 +62,7 @@ function GreetBind(){
         console.log(`${greeting}, my name is ${this.name}${punctuation}`);
     };
     const user = { name: 'Eve' };
-    // 透過 bind 方法建立一個新的函式，並指定 this 指向 user 物件
+    // 透過 bind 方法建立一個新的函式，並指定 this 指向 user 物件（部分預設參數為 'Hey'）
     const boundGreet = Greet.bind(user, 'Hey');
     // 呼叫新的函式，並傳遞剩餘的參數
     boundGreet('!!!'); // Hey, my name is Eve!!!
