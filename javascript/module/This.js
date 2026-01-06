@@ -70,6 +70,21 @@ function GreetBind(){
 // 輸出：Hey, my name is Eve!!!
 GreetBind(); // ✅ 加上這行，呼叫函式
 
+/*
+    實際使用範例
+*/
+//  1.物件方法共用（使用 call 或 apply在不同物件間共用方法）
+// 因這是外層包裝函式（隔離作用域），所以要呼叫才會執行
+function CallApplyExample(){
+    const personA = { name: 'Charlie' };
+    const personB = { name: 'Diana' };
 
-
+    function introduce(){
+        console.log(`Hello, I'm ${this.name}.`);
+    };
+    introduce.call(personA); // Hello, I'm Charlie.
+    introduce.apply(personB); // Hello, I'm Diana.
+};
+// ✅ 加上這行，呼叫函式
+CallApplyExample();
 
