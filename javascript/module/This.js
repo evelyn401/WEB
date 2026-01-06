@@ -117,11 +117,23 @@ function BindExample(){
             this.count++;  // 將 count 加 1
             console.log(this.count);  // 輸出當前計數
             document.getElementById("Number").innerText = this.count; // 更新顯示
+            // 當計數大於 0 時，啟用遞減按鈕
+            if(this.buttonMinus) {
+                this.buttonMinus.disabled = false;
+            }
         },
         decrement(){  // 遞增方法
-            this.count--;  // 將 count 減 1
-            console.log(this.count);  // 輸出當前計數
-            document.getElementById("Number").innerText = this.count; // 更新顯示
+            if(this.count > 0){  // ✅ 判斷計數是否大於 0
+                this.count--;  // 將 count 減 1
+                console.log(this.count);  // 輸出當前計數
+                document.getElementById("Number").innerText = this.count; // 更新顯示
+            } else {
+                console.log("最少為0");  // 提示訊息
+            }
+            // 當計數等於 0 時，禁用遞減按鈕
+            if(this.count === 0 && this.buttonMinus) {
+                this.buttonMinus.disabled = true;
+            }
         }
     };
     // 初始化顯示數字為 0
@@ -129,6 +141,10 @@ function BindExample(){
     // 2. 取得 ID 為 "MyCount" 的按鈕元素
     const ButtonPlus = document.getElementById("MyCountPlus");
     const ButtonMinus = document.getElementById("MyCountMinus");
+    // 將按鈕參考儲存到 counter 物件中
+    counter.buttonMinus = ButtonMinus;
+    // 初始狀態：因為計數為 0，所以禁用遞減按鈕
+    ButtonMinus.disabled = true;
     // 3. 綁定點擊事件，呼叫新的函式，並傳遞剩餘的參數
     ButtonPlus.addEventListener("click", counter.increment.bind(counter));
     ButtonMinus.addEventListener("click", counter.decrement.bind(counter));
