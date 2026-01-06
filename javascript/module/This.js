@@ -107,3 +107,32 @@ function BindExample(){
 }
 // 呼叫函式來設定事件監聽器
 BindExample();  
+
+// 製作加一減一按鈕
+function BindExample(){
+    // 1. 建立一個計數器物件
+    const counter = {
+        count: 0,  // 初始計數為 0
+        increment(){  // 遞增方法
+            this.count++;  // 將 count 加 1
+            console.log(this.count);  // 輸出當前計數
+            document.getElementById("Number").innerText = this.count; // 更新顯示
+        },
+        decrement(){  // 遞增方法
+            this.count--;  // 將 count 減 1
+            console.log(this.count);  // 輸出當前計數
+            document.getElementById("Number").innerText = this.count; // 更新顯示
+        }
+    };
+    // 初始化顯示數字為 0
+    document.getElementById("Number").textContent = "0"; 
+    // 2. 取得 ID 為 "MyCount" 的按鈕元素
+    const ButtonPlus = document.getElementById("MyCountPlus");
+    const ButtonMinus = document.getElementById("MyCountMinus");
+    // 3. 綁定點擊事件，呼叫新的函式，並傳遞剩餘的參數
+    ButtonPlus.addEventListener("click", counter.increment.bind(counter));
+    ButtonMinus.addEventListener("click", counter.decrement.bind(counter));
+    //                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    //                               使用 bind() 確保 this 指向 counter 物件
+}
+BindExample();  
