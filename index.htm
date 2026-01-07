@@ -103,38 +103,19 @@
                 <p class="lineW"></p>
             </div>
             <ol class="WorksItems">
-                <li v-if="BIGIMAGE" class="One PictureContect">
-                    <a @click="ShowCloseBigImage" href="javascript:;"><span>Packaging Design</span></a>
+                <li v-for="work in worksImages" 
+                    :key="work.id" 
+                    :class="work.id + ' PictureContect'"
+                    v-show="BIGIMAGE">
+                    <a @click="ShowCloseBigImage(work)" href="javascript:;">
+                        <span>{{ work.title }}</span>
+                    </a>
                 </li>
-                <div v-else id="BigImage">
-                    <span @click="ShowCloseBigImage" class="CloseBtn">CLOSE</span>
-                    <p>大圖</p>
-                </div>
-                <li class="Two PictureContect">
-                    <a href="javascript:;"><span>Business card Design</span></a>
-                </li>
-                <li class="Three PictureContect">
-                    <a href="javascript:;"><span>Storybook Design</span></a>
-                </li>
-                <li class="Four PictureContect">
-                    <a href="javascript:;"><span>Calendar Design</span></a>
-                </li>
-                <li class="Five PictureContect">
-                    <a href="javascript:;"><span>Board game Design</span></a>
-                </li>
-                <li class="Six PictureContect">
-                    <a href="javascript:;"><span>Website Design</span></a>
-                </li>
-                <li class="Seven PictureContect">
-                    <a href="javascript:;"><span>Stamp Design</span></a>
-                </li>
-                <li class="Eight PictureContect">
-                    <a href="javascript:;"><span>APP Design</span></a>
-                </li>
-                <li class="Nine PictureContect">
-                    <a href="javascript:;"><span>Premiere</span></a>
-                </li>
-            </ol>
+                <div v-show="!BIGIMAGE" id="BigImage">
+        <span @click="ShowCloseBigImage(null)" class="CloseBtn">CLOSE</span>
+        <img :src="selectedImage.src" :alt="selectedImage.alt">
+    </div>
+</ol>
         </section>
 
         <section id="Contacts" class="BackColor">

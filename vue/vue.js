@@ -43,12 +43,34 @@ const app2 = createApp({
             // 新增：目前顯示的輪播圖索引
             currentIndex: 0,
             // 新增：自動輪播計時器(null表示未啟動)
-            autoPlayInterval: null
+            autoPlayInterval: null,
+            // 新增：儲存選中的圖片資訊
+            selectedImage: {
+                src: '',
+                alt: ''
+            },
+            // 新增：作品圖片資料
+            worksImages: [
+                { id: 'One', src: '../images/work/work1.png', alt: 'Packaging Design', title: 'Packaging Design' },
+                { id: 'Two', src: '../images/work/work2.png', alt: 'Business card Design', title: 'Business card Design' },
+                { id: 'Three', src: '../images/work/work3.png', alt: 'Storybook Design', title: 'Storybook Design' },
+                { id: 'Four', src: '../images/work/work4.png', alt: 'Calendar Design', title: 'Calendar Design' },
+                { id: 'Five', src: '../images/work/work5.png', alt: 'Board game Design', title: 'Board game Design' },
+                { id: 'Six', src: '../images/work/work6.png', alt: 'Web Design', title: 'Web Design' },
+                { id: 'Seven', src: '../images/work/work7.png', alt: 'Stamp Design', title: 'Stamp Design' },
+                { id: 'Eight', src: '../images/work/work8.png', alt: 'UIUX Design', title: 'UIUX Design' },
+                { id: 'Nine', src: '../images/work/work9.png', alt: 'Video Editing', title: 'Video Editing' }
+            ],
         }
     },
     methods: {
         // 自訂函式內容
-        ShowCloseBigImage(){
+        ShowCloseBigImage(imageData) {
+            if (imageData) {
+                // 如果有傳入圖片資料，就儲存到 selectedImage
+                this.selectedImage = imageData;
+            }
+            // 切換大圖顯示狀態（true ⇄ false）
             this.BIGIMAGE = !this.BIGIMAGE;
         },
         // 新增：切換到下一張輪播圖
