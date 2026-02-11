@@ -83,7 +83,7 @@
 
 /* 作品集 */
 #Works {
-    background-image: url(/images/background/work01.jpg);
+    background-image: url(../../images/background/work01.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,31 +150,31 @@ a:hover span{
     font-weight: bold;
 }
 .One{
-    background-image: url(/images/work/work1.png);
+    background-image: url(../../images/work/work1.png);
 }
 .Two{
-    background-image: url(/images/work/work2.png);
+    background-image: url(../../images/work/work2.png);
 }
 .Three{
-    background-image: url(/images/work/work3.png);
+    background-image: url(../../images/work/work3.png);
 }
 .Four{
-    background-image: url(/images/work/work4.png);
+    background-image: url(../../images/work/work4.png);
 }
 .Five{
-    background-image: url(/images/work/work5.png);
+    background-image: url(../../images/work/work5.png);
 }
 .Six{
-    background-image: url(/images/work/work6.png);
+    background-image: url(../../images/work/work6.png);
 }
 .Seven{
-    background-image: url(/images/work/work7.png);
+    background-image: url(../../images/work/work7.png);
 }
 .Eight{
-    background-image: url(/images/work/work8.png);
+    background-image: url(../../images/work/work8.png);
 }
 .Nine{
-    background-image: url(/images/work/work9.png);
+    background-image: url(../../images/work/work9.png);
 }
 .PictureContect{
     background-size: cover;
