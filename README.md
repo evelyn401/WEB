@@ -11,7 +11,7 @@
 
 ## 🌐 線上展示
 
-網站連結:https://evelyn401.github.io/WEB/
+網站連結:https://evelyn401.github.io/EVELYN_WEB2/
 
 ## 📁 專案結構
 
