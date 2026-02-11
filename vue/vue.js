@@ -51,15 +51,15 @@ const app2 = createApp({
             },
             // 新增：作品圖片資料
             worksImages: [
-                { id: 'One', src: '../images/work/work1.png', alt: 'Packaging Design', title: 'Packaging Design' },
-                { id: 'Two', src: '../images/work/work2.png', alt: 'Business card Design', title: 'Business card Design' },
-                { id: 'Three', src: '../images/work/work3.png', alt: 'Storybook Design', title: 'Storybook Design' },
-                { id: 'Four', src: '../images/work/work4.png', alt: 'Calendar Design', title: 'Calendar Design' },
-                { id: 'Five', src: '../images/work/work5.png', alt: 'Board game Design', title: 'Board game Design' },
-                { id: 'Six', src: '../images/work/work6.png', alt: 'Web Design', title: 'Web Design' },
-                { id: 'Seven', src: '../images/work/work7.png', alt: 'Stamp Design', title: 'Stamp Design' },
-                { id: 'Eight', src: '../images/work/work8.png', alt: 'UIUX Design', title: 'UIUX Design' },
-                { id: 'Nine', src: '../images/work/work9.png', alt: 'Video Editing', title: 'Video Editing' }
+                { id: 'One', src: 'images/work/work1.png', alt: 'Packaging Design', title: 'Packaging Design' },
+                { id: 'Two', src: 'images/work/work2.png', alt: 'Business card Design', title: 'Business card Design' },
+                { id: 'Three', src: 'images/work/work3.png', alt: 'Storybook Design', title: 'Storybook Design' },
+                { id: 'Four', src: 'images/work/work4.png', alt: 'Calendar Design', title: 'Calendar Design' },
+                { id: 'Five', src: 'images/work/work5.png', alt: 'Board game Design', title: 'Board game Design' },
+                { id: 'Six', src: 'images/work/work6.png', alt: 'Web Design', title: 'Web Design' },
+                { id: 'Seven', src: 'images/work/work7.png', alt: 'Stamp Design', title: 'Stamp Design' },
+                { id: 'Eight', src: 'images/work/work8.png', alt: 'UIUX Design', title: 'UIUX Design' },
+                { id: 'Nine', src: 'images/work/work9.png', alt: 'Video Editing', title: 'Video Editing' }
             ],
         }
     },
